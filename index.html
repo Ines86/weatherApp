@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather App</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+</head>
+
+<body>
+  <div id="bg-img">
+    <div id="wrapper">
+      <h1><i class="wi wi-horizon-alt"></i> Weather App</h1>
+
+      <!-- Location and Date -->
+      <div id="location">
+        <h2 id="currentLocation">Location</h2>
+        <h4 id="currentDate">Date</h4>
+      </div>
+
+      <!-- Current Weather -->
+      <div id="main-data">
+        <p id="forecast"><i class="wi"></i></p>
+        <p id="currentWeather"></p>
+      </div>
+
+      <!-- Temperature -->
+      <div id="temp">
+        <p id="currentTemp">Temperature</p>
+        <label class="toggle">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <p id="high-low"></p>
+      </div>
+
+      <!-- Other weather data -->
+      <div id="parameters">
+        <ul>
+          <li>Wind</li>
+          <li>Clouds</li>
+          <li>Humidity</li>
+          <li>Pressure</li>
+        </ul>
+
+        <!-- Icons -->
+        <ul>
+          <li><i class="wi wi-strong-wind"></i></li>
+          <li><i class="wi wi-cloudy"></i></li>
+          <li><i class="wi wi-humidity"></i></li>
+          <li><i class="wi wi-barometer"></i></li>
+        </ul>
+        <!-- API Current Data -->
+        <ul>
+          <li id="wind"></li>
+          <li id="cloud"></li>
+          <li id="humidity"></li>
+          <li id="pressure"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="scripts/app.js"></script>
+</body>
+</html>
